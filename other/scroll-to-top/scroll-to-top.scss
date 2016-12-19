@@ -1,0 +1,57 @@
+/* кнопка "вверх страницы" */
+.scroll-to-top{
+	display: none;
+	background: rgba(0,0,0,0.5);
+	height: 62px;
+	width: 62px;
+	position: fixed;
+	cursor:pointer;
+	bottom:60px;
+	right:10px;
+
+  /* This timing applies on the way IN */
+  transition-timing-function: ease-out;
+
+  /* A litttttle slower on the way in */
+  transition: 0.25s;
+  
+  /* Move into place */
+  transform: translateY(0);
+
+	@include border-radius(31px);
+	@include transition(0.12s linear);
+
+	&:hover{
+		background: rgba(0,0,0,0.7);
+	}
+
+	i{
+		@include centerme();
+		color: #fff;
+		font-size: 60px;
+		margin-top: -3px;
+
+	}
+	@include breakpoint(sm){
+		right:14px;
+		bottom:80px;
+
+	}
+	@include breakpoint(md){
+		bottom:20px;
+		right:47px;
+	}
+	@include breakpoint(lg){
+		
+	}
+
+	&--hide{
+		transition-timing-function: ease-in;
+
+		transition: 0.2s;
+
+		transform: translateY(140%);
+	}
+
+}
+/* end кнопка "вверх страницы" */
