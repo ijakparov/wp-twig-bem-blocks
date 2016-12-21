@@ -1,0 +1,73 @@
+.tb-input{
+	display: block;
+	float: left;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	color: #868686;
+	text-align: left;
+	line-height: normal;
+	border:1px solid rgba(211, 217, 222, 1);
+	padding-left: 50px;
+	height: 35px;
+  width: 100%;
+  @include transition(0.12s linear all);
+  @include border-radius(3px);
+}
+
+.tb-input-wrap{
+
+	.tb-input-icon{
+		position: absolute;
+		top: 9px;
+		left: 9px;
+		font-size: 15px;
+		color: #909090;
+	}
+
+	.tb-input{
+    padding: 0px 10px;
+
+
+    &--has-btn{
+      @include border-radius(3px 0px 0px 3px); 
+      border-right: 0px;
+
+
+    }
+    &--has-btn+.tb-input-btn{
+      .ajax-loader{
+        @include centerme();
+      }
+    }
+
+    &--has-btn-exclude-mobile{
+      @include breakpoint(xs){
+        @include border-radius(3px);  
+      }
+
+    }
+    &--with-icon{
+      padding-left: 30px;
+    }
+  }
+}
+
+.tb-input-btn{
+  position: absolute;
+  top:0px;
+  right:0px;
+  @include border-radius(0px 3px 3px 0px !important); 
+  height:35px;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+
+.tb-input+.error{
+  display: block;
+  font-size: 13px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #ff5454;
+}
+

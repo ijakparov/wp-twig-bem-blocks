@@ -1,0 +1,13 @@
+<div class="tb-input-wrap {{wrap_class}}">
+	{% if inputicon %}
+	<i class="fa {{inputicon}} tb-input-icon" aria-hidden="true"></i>
+	{% endif %}
+	<input type="text" name="{{inputname}}" placeholder="{{placeholder ? placeholder : 'поиск'}}" value="" class="tb-input {{has_btn ? 'tb-input--has-btn'}} {{inputicon ? 'tb-input--with-icon'}}">
+	{% if has_btn %}
+	<div class="tb-input-btn {{js_btn_id}} {{btn_class}}">
+		<span>{{btn_text}}</span>
+		<div class="ajax-loader" style="display: none;"></div>
+	</div>
+	{% endif %}
+	<div class="clear"></div>
+</div>
