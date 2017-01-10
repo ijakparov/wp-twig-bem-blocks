@@ -1,12 +1,48 @@
-<div class="items-slider">
+<div class="items-slider" data-slides="{{slides}}">
+	{% block items_slider_slides %}
 	<div class="items-slider__wrapper">
-		{% for item in items %}
 		<div class="items-slider__slide">
 
-			slide
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"Лак для ногтей ",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"5600",price:"1999",colors:"",leed_class:"item-in-listing__leed--padding"} %}
+
+		</div>		
+	</div>
+	<div class="items-slider__wrapper">
+		<div class="items-slider__slide">
+
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"Лак для ногтей 'My Voice is a Little Norse' / NORDIC 15мл",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"",price:"1999",colors:"1",leed_class:"item-in-listing__leed--padding"} %}
 
 		</div>	
-		{% endfor %}	
 	</div>
+	<div class="items-slider__wrapper">
+		<div class="items-slider__slide">
+
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"L'oreal professionnel inoa - иноа ods2 оксидент 6% 20 волюм 1000 мл",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"5600",price:"1999",colors:"",leed_class:"item-in-listing__leed--padding"} %}
+
+		</div>	
+	</div>
+	<div class="items-slider__wrapper">
+		<div class="items-slider__slide">
+
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"L'oreal professionnel inoa - иноа ods2 оксидент 6% 20 волюм 1000 мл",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"5600",price:"1999",colors:"",leed_class:"item-in-listing__leed--padding"} %}
+
+		</div>	
+	</div>
+	<div class="items-slider__wrapper">
+		<div class="items-slider__slide">
+
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"L'oreal professionnel inoa - иноа ods2 оксидент 6% 20 волюм 1000 мл",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"5600",price:"1999",colors:"",leed_class:"item-in-listing__leed--padding"} %}
+
+		</div>	
+	</div>
+	<div class="items-slider__wrapper">
+		<div class="items-slider__slide">
+
+			{% include "shop/items-listing/item-in-listing/item-in-listing.twig" with {pic:TimberImage(theme.path~"/img/temp/u214.png").src,title:"L'oreal professionnel inoa - иноа ods2 оксидент 6% 20 волюм 1000 мл",cat_name:"масла",cat_link:"#",brand_name:"Pupa",brand_link:"#",item_link:"#",ID:"",old_price:"5600",price:"1999",colors:"",leed_class:"item-in-listing__leed--padding"} %}
+
+		</div>	
+	</div>
+	{% endblock items_slider_slides %}
+
 </div>
 
