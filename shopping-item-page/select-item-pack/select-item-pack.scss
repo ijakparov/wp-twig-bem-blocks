@@ -1,0 +1,43 @@
+.select-item-pack{
+	&__label{
+		float: left;
+		font-size: 13px;
+		color: #666;
+		margin-right: 15px;
+	}
+	&__items{
+		float: left;
+		margin-top: -7px;
+	}
+	&__item{
+		float: left;
+		margin-right: 8px;
+		font-size: 14px;
+		color: #1E1E1E;
+		padding: 6px 10px;
+		border: 1px solid rgba(228, 228, 228, 1);
+		outline: 1px solid #fff;
+		cursor: pointer;
+		@include transition(0.12s linear all);
+
+		
+
+		&--current{
+			border: 1px solid #FF6699;
+			outline: 1px solid #FF6699;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			border-color: #FF4280;
+			outline: 1px solid #FF6699;
+		}
+		&:focus,&:active{
+			border-color: #FF1562;
+			outline: 1px solid #FF6699;
+		}
+	}
+}

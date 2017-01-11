@@ -1,0 +1,15 @@
+<div class="select-item-pack clearfix">
+	<div class="select-item-pack__label">
+		{{label}}:
+	</div>
+	<div class="select-item-pack__items">
+	
+			{% for item in items %}
+				<div class="select-item-pack__item" data-price="{{price}}">
+					{{item}}
+				</div>
+			{% endfor %}
+	
+		
+	</div>
+</div>
