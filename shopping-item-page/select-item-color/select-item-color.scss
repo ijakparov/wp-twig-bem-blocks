@@ -1,0 +1,38 @@
+.select-item-color{
+	&__label{
+		font-size: 13px;
+		color: #666;
+		margin-bottom: 15px;
+	}
+	&__text{
+		color: #000;
+		margin-left: 10px;
+	}
+
+	&__item{
+		width: 33px;
+		height: 33px;
+		border: 1px solid rgba(228, 228, 228, 1);
+		outline: 1px solid #fff;
+		cursor: pointer;
+		margin:1px;
+		float: left;
+		margin-right: 10px;
+
+		@include transition(0.12s linear all);
+
+		&:hover{
+			border: 1px solid rgba(255, 102, 153, 1);
+			outline: 1px solid rgba(255, 102, 153, 1);
+		}
+
+		&--current{
+			border: 1px solid rgba(255, 102, 153, 1);
+			outline: 1px solid rgba(255, 102, 153, 1);
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
