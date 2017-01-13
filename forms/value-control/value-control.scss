@@ -1,4 +1,10 @@
 .value-control{
+	&--normal{
+		width: 75px;
+	}
+	&--centered{
+		margin: auto;
+	}
 	
 
 	input{
