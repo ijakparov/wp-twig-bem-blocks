@@ -1,4 +1,4 @@
-<div class="input-wrap {{warp_class}}">
+<div class="input-wrap {{warp_class}} {{text_before ? 'input-wrap--has-text-before'}} {{cross ? 'input-wrap--has-cross'}} {{has_btn ? 'input-wrap--has-btn'}} {{inputicon ? 'input-wrap--with-icon'}}">
 	{% if inputicon %}
 	<i class="fa {{inputicon}} input-wrap__input-icon" aria-hidden="true"></i>
 	{% endif %}
@@ -9,7 +9,7 @@
 	</div>
 	{% endif %}
 
-	<input type="text" name="{{inputname}}" placeholder="{{placeholder ? placeholder : 'поиск'}}" value="" class="tb-input {{has_btn ? 'tb-input--has-btn'}} {{inputicon ? 'tb-input--with-icon'}}" {{maxlength ? "maxlength='"~maxlength~"'"}}>
+	<input type="text" name="{{inputname}}" placeholder="{{placeholder ? placeholder : 'поиск'}}" value="" {{maxlength ? "maxlength='"~maxlength~"'"}}>
 	{% if has_btn %}
 	<div class="input-wrap__input-btn {{js_btn_id}} {{btn_class}}">
 		<span>{{btn_text}}</span>
